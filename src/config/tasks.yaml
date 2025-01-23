@@ -1,0 +1,22 @@
+---
+search_for_latest_ai_services_and_trends:
+  description: Using the keyword {keyword}, perform a web search to find the most
+    recent information on AI services and trends.
+  expected_output: A list of the latest AI services and trends along with relevant
+    links.
+  async_execution: false
+  agent: ai_info_gatherer
+summarize_gathered_information:
+  description: Summarize the information collected from the web search, highlighting
+    key points and trends.
+  expected_output: Summarized information on the latest AI services and trends with
+    key points and trends highlighted.
+  async_execution: false
+  agent: ai_info_gatherer
+store_chat_history_and_information:
+  description: Store the chat history and the summarized information along with relevant
+    links in the agent's memory for future reference.
+  expected_output: Stored chat history and summarized information with relevant links
+    in memory.
+  async_execution: false
+  agent: ai_info_gatherer
