@@ -1,14 +1,14 @@
-[project]
+[tool.poetry]
 name = "building_an_ai_agent_for_web_search_and_information_gathering"
 version = "0.1.0"
 description = "building_an_ai_agent_for_web_search_and_information_gathering using crewAI"
-authors = [{ name = "Your Name", email = "you@example.com" }]
+authors = [{ name = "Manjeet", email = "manjeet.singh23@unilever.com" }]
 requires-python = ">=3.10,<=3.13"
 dependencies = [
     "crewai[tools]>=0.86.0,<1.0.0"
 ]
 
-[project.scripts]
+[tool.poetry.scripts]
 building_an_ai_agent_for_web_search_and_information_gathering = "building_an_ai_agent_for_web_search_and_information_gathering.main:run"
 run_crew = "building_an_ai_agent_for_web_search_and_information_gathering.main:run"
 train = "building_an_ai_agent_for_web_search_and_information_gathering.main:train"
@@ -16,5 +16,5 @@ replay = "building_an_ai_agent_for_web_search_and_information_gathering.main:rep
 test = "building_an_ai_agent_for_web_search_and_information_gathering.main:test"
 
 [build-system]
-requires = ["hatchling"]
-build-backend = "hatchling.build"
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
